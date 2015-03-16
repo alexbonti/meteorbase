@@ -1,0 +1,11 @@
+applications:
+- name: meteorBase
+  host: meteorBase
+  domain: mybluemix.net
+  memory: 512M
+  buildpack: https://github.com/jordansissel/heroku-buildpack-meteor.git
+  disk: 512M
+  instances: 1
+  env:
+    MONGO_URL: mongodb://IbmCloud_ri6je1gj_sihdov5t_7pfanna4:Ebi_rEouhYppvHXhO8DerfA2aJBYi4jc@ds049570.mongolab.com:49570/IbmCloud_ri6je1gj_sihdov5t
+    ROOT_URL: http://meteorBase.mybluemix.net
