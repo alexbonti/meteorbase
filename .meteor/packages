@@ -6,6 +6,7 @@
 meteor-platform
 less
 jquery
+accounts-base
 underscore
 accounts-password
 aldeed:collection2
@@ -21,5 +22,14 @@ useraccounts:semantic-ui
 natestrauser:animate-css
 dburles:collection-helpers
 meteorhacks:fast-render
+launch-screen
+natestrauser:font-awesome
+meteorhacks:npm
+percolate:synced-cron
+momentjs:moment
+mizzao:bootstrap-3
+velocityjs:velocityjs
+mizzao:bootboxjs
+frozeman:animation-helper-velocity
 
-semantic:ui-css
+npm-container

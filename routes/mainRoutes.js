@@ -1,8 +1,8 @@
 // Home Route
 Router.route('/', {
-  name: 'home',
+  name: 'login',
   action: function () {
-    this.render('home');
+    this.render('login');
     SEO.set({ title: 'Home - ' + Meteor.App.NAME });
   }
 });
