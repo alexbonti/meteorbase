@@ -23,7 +23,7 @@ Template.login.events({
             else {
                 // redirect to dashboard
                 if(Meteor.user().profile.role=='Admin'){
-                    Router.go('/admin');
+                    Router.go('/home');
                 }else{
                     Router.go('/home');
                 }
@@ -42,6 +42,8 @@ Template.login.events({
 
 });
 
-Template.login.redered=function(){
-    Meteor.logout();
+Template.login.rendered=function(){
+   // alert('sto cazzo');
+
+   Meteor.logout();
 };

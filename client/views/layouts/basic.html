@@ -1,7 +1,15 @@
 <template name="basicLayout">
     <div id="main">
+        {{#unless lostConnection}}
+        {{>connecting}}
+        {{/unless}}
+
+        {{> notifications}}
         <header>
+            {{#if navBar}}
             {{> header}}
+            {{/if}}
+
         </header>
 
             {{> yield}}

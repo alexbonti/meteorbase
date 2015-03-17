@@ -9,14 +9,12 @@ jquery
 accounts-base
 underscore
 accounts-password
-aldeed:collection2
 iron:router
 raix:handlebar-helpers
 matteodem:easy-security
 audit-argument-checks
 fastclick
 zimme:iron-router-active
-manuelschoebel:ms-seo
 browser-policy
 useraccounts:semantic-ui
 natestrauser:animate-css
@@ -28,8 +26,12 @@ meteorhacks:npm
 percolate:synced-cron
 momentjs:moment
 mizzao:bootstrap-3
-velocityjs:velocityjs
 mizzao:bootboxjs
+
+
+#use velocity for animations
+velocityjs:velocityjs
 frozeman:animation-helper-velocity
 
 npm-container
+gfk:notifications

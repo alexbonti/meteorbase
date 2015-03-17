@@ -25,7 +25,7 @@ Meteor.startup(function () {
           profile: {
               firstName: 'Admin',
               lastName: 'Admin',
-              role:''
+              role:'admin'
 
 
               }
@@ -45,6 +45,7 @@ Meteor.startup(function () {
           username: 'alessio',
           password: 'totti',
           profile: {
+              role:'admin',
               firstName: 'alessio',
               lastName: 'bonti'
           }
