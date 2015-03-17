@@ -1,21 +1,23 @@
 <template name="basicLayout">
+    <header>
+        {{#if navBar}}
+        {{> header}}
+        {{/if}}
+
+    </header>
     <div id="main">
-        {{#unless lostConnection}}
+        {{#if lostConnection}}
         {{>connecting}}
-        {{/unless}}
+        {{/if}}
 
         {{> notifications}}
-        <header>
-            {{#if navBar}}
-            {{> header}}
-            {{/if}}
 
-        </header>
 
             {{> yield}}
             {{! Also a sidebar! }}
-        <footer>
-            {{> footer}}
-        </footer>
+
     </div>
+    <footer>
+        {{> footer}}
+    </footer>
 </template>

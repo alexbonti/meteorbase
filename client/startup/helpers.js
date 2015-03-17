@@ -17,6 +17,24 @@ Handlebars.registerHelper('footBar', function() {
 });
 
 Handlebars.registerHelper('lostConnection', function() {
-    return Meteor.status().connected;
+    return Session.get('lostConnection');
+   /* connected=Meteor.status().connected;
+    if(connected){
+        return false;
+
+    }else{
+        console.log('testing if the connection is really dead');
+        setTimeout(
+            function(){
+                if(Meteor.status().connected==false){
+                    console.log('is really dead');
+                    return true;
+                }
+
+            },3000
+        )
+    }*/
+
+
 });
 
