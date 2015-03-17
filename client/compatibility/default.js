@@ -4,6 +4,6 @@
 */
 
 var globalVariable = {
-    loggingSecurity:false
+    loggingSecurity:true
 
 }

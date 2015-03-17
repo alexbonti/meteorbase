@@ -1,6 +1,54 @@
-# meteor-boilerplate
+#Meteor-base 
 
 This boilerplate is here to give you a starting point for your meteor projects, with a console tool to ease up some tasks. Essential atmosphere packages are included to give you features like routing and collection schemas out-of-the-box.  
+
+This specific boiler plate has been based on the work of MatteoDem. https://github.com/matteodem/meteor-boilerplate 
+
+Any questions, drop me a line at alebonti@au1.ibm.com
+
+
+Status 
+Currently created a login function, username test, password test, with profiles.
+Automatic kicking out of the user when he logs out in order to avoid 
+Lost connection funcionality - whenever a user looses connection, a "connecting screen is shown"
+Global helpers for headers and footers
+Notify and Bootbox added to provide messaging display to the user.
+
+Currently SEO funcionality is disabled
+
+
+Current packages
+Updated packages list
+meteor-platform
+less
+jquery
+accounts-base
+underscore
+accounts-password
+iron:router
+raix:handlebar-helpers
+matteodem:easy-security
+audit-argument-checks
+fastclick
+zimme:iron-router-active
+browser-policy
+useraccounts:semantic-ui
+natestrauser:animate-css
+dburles:collection-helpers
+meteorhacks:fast-render
+launch-screen
+natestrauser:font-awesome
+meteorhacks:npm
+percolate:synced-cron
+momentjs:moment
+mizzao:bootstrap-3
+mizzao:bootboxjs
+#use velocity for animations
+velocityjs:velocityjs
+frozeman:animation-helper-velocity
+npm-container
+gfk:notifications
+
 
 <!-- toc -->
 
@@ -24,20 +72,7 @@ The boilerplate looks like following: [boilerplate.meteor.com](http://boilerplat
 
 ## Installing with orion-cli
 
-```bash
-npm install -g orion-cli
-```
 
-This will install the [orion-cli](https://github.com/matteodem/orion-cli) tool, which can be used for scaffolding files with different profiles.
-You can still clone the repository, which doesn't give you the profile and scaffolding support.
-
-## How to use
-
-```sh
-# Assuming meteor is already installed
-orion create appName
-cd appName && meteor
-```
 
 ### Generating files
 
