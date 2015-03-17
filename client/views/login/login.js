@@ -7,10 +7,10 @@ Template.login.events({
     'submit #login-form': function(e) {
 
         e.preventDefault();
-        Meteor.call('testFunction', function (err, res) {
+       /* Meteor.call('testFunction', function (err, res) {
             if (err) console.log(err);
             else console.log('response: ', res);
-        });
+        });*/
         var username = $('#login-username').val();
         var password = $('#login-password').val();
         // try to login
