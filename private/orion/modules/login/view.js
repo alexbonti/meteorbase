@@ -1,8 +1,10 @@
+// { "path" : "client/views/__viewName__/__viewName__.js" }
+
 /**
  * Events in the scope of the template "login". Elements outside of this template won't be affected, even if the selector
  * is the same.
  */
-Template.login.events({
+Template.__viewName__.events({
 
     /**
      * Submit the login form. Attempt to login. If the login fails, change the button color to red (to indicate an error)

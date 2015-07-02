@@ -1,24 +1,31 @@
-Template.header.created = function () {
-};
-
-Template['header'].helpers({
-    profile:function(){
-        return Meteor.user().profile;
-    }
-
+Template.header.helpers({
+    
 });
+Template.header.events({
+    /**
+     * Click on the logout icon
+     * @param e
+     */
+    'click #logout-icon': function(e) {
+        Meteor.logout();
+    },
 
-Template['header'].events({
-    'click .logoutLI':function(){
-        Meteor.logout(function(err){
-            if(!err){
+    /**
+     * Click on the home icon
+     * @param e
+     */
+    'click #home-icon': function(e) {
+        Router.go('/');
+    },
 
-                Notifications.warn('Server', 'You have succesfully logged out');
-            }
-        });
 
+    /*
+     * Simulating the ease effect in the header
+     */
+    'mouseenter a': function(e) {
+        $(e.target).closest('a').css('color', '#f00');
+    },
+    'mouseout a': function(e) {
+        $(e.target).closest('a').css('color', '#337ab7');
     }
-
-
 });
-
