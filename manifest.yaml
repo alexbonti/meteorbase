@@ -7,5 +7,5 @@ applications:
   disk: 512M
   instances: 1
   env:
-    MONGO_URL: mongodb://IbmCloud_jfst9kr9_jkrof3do_ei588v16:yZy4BUIJje5GWfUbQ98fWPaJRc03Nz3S@ds041180.mongolab.com:41180/IbmCloud_jfst9kr9_jkrof3do
+    MONGO_URL: replacewithmongourl
     ROOT_URL: http://meteorBase.mybluemix.net

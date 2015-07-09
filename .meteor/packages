@@ -1,37 +1,38 @@
 # Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
 #
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
+
+################ ESSENTIALS ################
 meteor-platform
 less
 jquery
-accounts-base
-underscore
 accounts-password
+aldeed:collection2
+matb33:collection-hooks
+tmeasday:publish-counts
+meteorhacks:aggregate
 iron:router
-raix:handlebar-helpers
-matteodem:easy-security
-audit-argument-checks
-fastclick
-zimme:iron-router-active
-browser-policy
-useraccounts:semantic-ui
-natestrauser:animate-css
-dburles:collection-helpers
-meteorhacks:fast-render
-launch-screen
-natestrauser:font-awesome
-meteorhacks:npm
-percolate:synced-cron
 momentjs:moment
 mizzao:bootstrap-3
-mizzao:bootboxjs
+browser-policy
+reactive-var
+http
 
 
-#use velocity for animations
-velocityjs:velocityjs
-frozeman:animation-helper-velocity
-
-npm-container
+################ OPTIONAL / HELPFUL PACKAGES ################
+tsega:bootstrap3-datetimepicker
+mrt:bootstrap3-typeahead
+mrt:filesaver
+johdirr:meteor-git-rev
+#matteodem:gridster
+#peernohell:c3
+#dburles:google-maps
+juliancwirko:s-alert
+fortawesome:fontawesome
 gfk:notifications
+meteortoys:allthings
+percolate:synced-cron
+#accolver:twilio-meteor
